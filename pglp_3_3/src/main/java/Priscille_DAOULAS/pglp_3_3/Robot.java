@@ -4,7 +4,7 @@ package Priscille_DAOULAS.pglp_3_3;
  */
 public abstract class Robot {
 	/**
-	 * Position du robot.	 
+	 * Position du robot.
 	 */
 	protected Position position;
 	/**
@@ -13,16 +13,17 @@ public abstract class Robot {
 	protected Direction direction;
 	/**
 	 * Constructeur par défaut.
-	 * @param pos La position du robot
 	 */
 	public Robot() {
 		position = new Position();
 		direction = Direction.Nord;
-	}/**
+	}
+	/**
 	 * Constructeur.
-	 * @param pos La position du robot
+	 * @param p La position du robot
+	 * @param d La direction du robot
 	 */
-	public Robot(Position p, Direction d) {
+	public Robot(final Position p, final Direction d) {
 		position = p;
 		direction = d;
 	}
@@ -36,14 +37,11 @@ public abstract class Robot {
 	public void tourne() {
 		if (direction == Direction.Sud) {
 			direction = Direction.Ouest;
-		}
-		else if (direction == Direction.Ouest) {
+		} else if (direction == Direction.Ouest) {
 			direction = Direction.Nord;
-		}
-		else if (direction == Direction.Est) {
+		} else if (direction == Direction.Est) {
 			direction = Direction.Sud;
-		}
-		else if (direction == Direction.Nord) {
+		} else if (direction == Direction.Nord) {
 			direction = Direction.Est;
 		}
 	}

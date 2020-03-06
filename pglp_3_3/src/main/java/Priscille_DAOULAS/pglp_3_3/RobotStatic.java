@@ -11,7 +11,7 @@ public class RobotStatic {
 	 * Constructeur.
 	 * @param pos La position du robot
 	 */
-	public RobotStatic(Position pos) {
+	public RobotStatic(final Position pos) {
 		position = pos;
 	}
 }

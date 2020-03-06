@@ -3,11 +3,11 @@ package Priscille_DAOULAS.pglp_3_3;
 import java.util.ArrayList;
 
 /**
- * Classe App 
+ * Classe App.
  */
 public final class App {
 	/**
-	 * constructeur de la classe App.
+	 * Constructeur de la classe App.
 	 */
 	private App() {
 	}

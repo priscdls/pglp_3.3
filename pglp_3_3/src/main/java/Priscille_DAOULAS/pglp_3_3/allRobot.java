@@ -4,6 +4,16 @@ import java.util.ArrayList;
 
 public class allRobot {
 	/**
+	 * Liste de robots.
+	 */
+	protected ArrayList<Robot> liste;
+	/**
+	 * Constructeur.
+	 */
+	public allRobot() {
+		liste = new ArrayList<Robot>();
+	}
+	/**
 	 * Fonction faisant avancer les robots de la liste.
 	 * @param liste La liste des robots qui avancent
 	 */

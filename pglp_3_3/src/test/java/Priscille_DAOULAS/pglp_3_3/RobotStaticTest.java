@@ -8,10 +8,10 @@ import org.junit.Test;
  */
 public class RobotStaticTest {
 
-	@Test
 	/**
 	 * Test du constructeur.
 	 */
+	@Test
 	public void test() {
 		Position p = new Position(1,5);
 		RobotStatic rs = new RobotStatic(p);
