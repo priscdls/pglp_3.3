@@ -19,7 +19,7 @@ public final class App {
     	ArrayList<Robot> listeRb = new ArrayList<Robot>();
         listeRb.add(new RobotType1());
         listeRb.add(new RobotType2(12));
-        allRobot.avancerTous(listeRb);
+        AllRobot.avancerTous(listeRb);
         for (Robot robot : listeRb) {
 			System.out.println(robot.position.toString());
 		}

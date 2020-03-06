@@ -1,8 +1,7 @@
 package Priscille_DAOULAS.pglp_3_3;
-
 import java.util.ArrayList;
 
-public class allRobot {
+public class AllRobot {
 	/**
 	 * Liste de robots.
 	 */
@@ -10,7 +9,7 @@ public class allRobot {
 	/**
 	 * Constructeur.
 	 */
-	public allRobot() {
+	public AllRobot() {
 		liste = new ArrayList<Robot>();
 	}
 	/**
