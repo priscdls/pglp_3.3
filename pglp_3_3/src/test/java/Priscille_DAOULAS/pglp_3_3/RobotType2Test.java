@@ -13,7 +13,7 @@ public class RobotType2Test {
 	@Test
 	public void test() {
 		Robot r = new RobotType2(4);
-		assertTrue(r.getPosition().x == 0 && r.getPosition().y == 0);
+		assertTrue(r.getPosition().getX() == 0 && r.getPosition().getY() == 0);
 	}
 	/**
 	 * Test de l'avancement.
@@ -23,6 +23,6 @@ public class RobotType2Test {
 		Robot r = new RobotType2(15);
 		r.tourne();
 		r.avance();
-		assertTrue(r.getPosition().x == 15 && r.getPosition().y == 0);
+		assertTrue(r.getPosition().getX() == 15 && r.getPosition().getY() == 0);
 	}
 }
