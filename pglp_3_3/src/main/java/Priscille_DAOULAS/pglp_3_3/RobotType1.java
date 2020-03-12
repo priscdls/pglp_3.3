@@ -15,11 +15,11 @@ public class RobotType1 extends Robot {
         if (direction == Direction.Nord) {
             position.setY(position.getY() + av);
         } else if (direction == Direction.Sud) {
-            position.setY(position.getY() + av);
+            position.setY(position.getY() - av);
         } else if (direction == Direction.Ouest) {
-            position.setY(position.getY() + av);
+            position.setX(position.getX() - av);
         } else if (direction == Direction.Est) {
-            position.setY(position.getY() + av);
+            position.setX(position.getX() + av);
         }
     }
 }
