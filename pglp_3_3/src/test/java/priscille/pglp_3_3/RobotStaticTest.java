@@ -15,5 +15,6 @@ public class RobotStaticTest {
 	public void test() {
 		Position p = new Position(1,5);
 		RobotStatic rs = new RobotStatic(p);
+		assertEquals(rs.getPosition().toString(), "Position : (1,5)");
 	}
 }

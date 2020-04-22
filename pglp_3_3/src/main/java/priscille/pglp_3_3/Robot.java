@@ -12,6 +12,13 @@ public abstract class Robot {
      */
     protected Direction direction;
     /**
+     * Fonction qui permet de récupérer la position du robot.
+     * @return La position du robot
+     */
+    public Position getPosition() {
+        return new Position(position.getX(), position.getY());
+    }
+    /**
      * Constructeur par défaut.
      */
     public Robot() {
@@ -44,12 +51,5 @@ public abstract class Robot {
         } else if (direction == Direction.Nord) {
             direction = Direction.Est;
         }
-    }
-    /**
-     * Fonction qui permet de récupérer la position du robot.
-     * @return La position du robot
-     */
-    public Position getPosition() {
-        return new Position(position.getX(), position.getY());
     }
 }
