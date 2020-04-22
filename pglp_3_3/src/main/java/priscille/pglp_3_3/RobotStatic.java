@@ -1,4 +1,4 @@
-package Priscille_DAOULAS.pglp_3_3;
+package priscille.pglp_3_3;
 /**
  * Classe RobotStatic.
  */

@@ -1,6 +1,4 @@
-package Priscille_DAOULAS.pglp_3_3;
-
-import java.util.ArrayList;
+package priscille.pglp_3_3;
 
 /**
  * Classe App.
@@ -16,11 +14,12 @@ public final class App {
      * @param args Les arguments donnés au démarrage
      */
     public static void main(final String[] args) {
-        ArrayList<Robot> listeRb = new ArrayList<Robot>();
-        listeRb.add(new RobotType1());
-        listeRb.add(new RobotType2(12));
-        AllRobot.avancerTous(listeRb);
-        for (Robot robot : listeRb) {
+        final int vitesse = 12;
+        AllRobot rbs = new AllRobot();
+        rbs.add(new RobotType1());
+        rbs.add(new RobotType2(vitesse));
+        rbs.avancerTous();
+        for (Robot robot : rbs.liste) {
             System.out.println(robot.position.toString());
         }
     }
